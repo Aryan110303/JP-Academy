@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "jpacademymeerut.in",
+  "Id": "598f5639-7cc4-43af-ab33-5ef30cd0b1ed"
+}
