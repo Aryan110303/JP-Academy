@@ -1,0 +1,148 @@
+
+/*=-====Bootstrapthemes.co btco-hover-menu=====*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(64, 64, 64);
+}
+.btco-hover-menu a ,  .navbar > li > a {
+    text-transform: capitalize;
+    /* padding: 10px 15px; */
+}
+.btco-hover-menu .active a,
+.btco-hover-menu .active a:focus,
+.btco-hover-menu .active a:hover,
+.btco-hover-menu li a:hover,
+.btco-hover-menu li a:focus ,
+.navbar>.show>a,  .navbar>.show>a:focus,  .navbar>.show>a:hover{
+        background: #0866a9;
+    outline: 0;
+    color: #fff !important;
+}
+
+
+
+/*submenu style start from here*/
+
+
+.dropdown-menu {
+    padding: 0px 0; 
+    margin: 0 0 0; 
+    font-size: 14px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+
+}
+
+.dropdown-menu li a{color: #fff !important}
+
+.dropdown-item {padding: .25rem 0.5rem;text-transform: capitalize !important;}
+/*first level*/
+.btco-hover-menu .collapse ul > li:hover > a{background: #0866a9; color: #fff !important;}
+.btco-hover-menu .collapse ul ul > li:hover > a, .navbar .show .dropdown-menu > li > a:focus, 
+.navbar .show .dropdown-menu > li > a:hover{/*background: #fff;*/}
+/*second level*/
+.btco-hover-menu .collapse ul ul ul > li:hover > a{/*background: #fff;*/}
+
+/*third level*/
+.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu{
+       background:#05538a;  
+    /* box-shadow: 0px 0px 10px 0px #e2e2e2 !important; */
+    }
+.btco-hover-menu .collapse ul ul ul, .btco-hover-menu .collapse ul ul ul.dropdown-menu{background:#f5f5f5}
+.btco-hover-menu .collapse ul ul ul ul, .btco-hover-menu .collapse ul ul ul ul.dropdown-menu{background:#f5f5f5}
+
+a.dropdown-item.dropdown-toggle.arrowmenu{color: #fff !important}
+a.dropdown-item.dropdown-toggle.arrowmenu:before{display: none;}
+header.sticky a.dropdown-item.dropdown-toggle.arrowmenu{color: #fff !important}
+/*Drop-down menu work on hover*/
+.btco-hover-menu{/*background: none;margin: 0;padding: 0;min-height:20px;*/}
+
+@media only screen and (max-width: 991px) {
+    .btco-hover-menu .show > .dropdown-toggle::after{
+        transform: rotate(-90deg);
+    }
+}
+@media only screen and (min-width: 991px) {
+    .btco-hover-menu ul ul:before {
+    bottom: 100%;
+    left: 15%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #aadcff;
+    border-width: 10px;
+    margin-left: -10px;
+}   
+.btco-hover-menu  ul li:hover>ul {
+    padding: 0;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+    .btco-hover-menu .collapse ul li{position:relative;}
+    .btco-hover-menu .collapse ul li:hover> ul{display:block}
+    .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none;
+    -webkit-box-shadow: 0 6px 12px 0 rgba(0,0,0,.175);
+    -moz-box-shadow: 0 6px 12px 0 rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.175);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;}
+    /*******/
+    .btco-hover-menu .collapse ul ul li{position: relative;padding: 0;border-bottom:1px solid rgb(4, 88, 148);}
+    .btco-hover-menu .collapse ul ul li:hover> ul{display:block}
+    .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+    /*******/
+    .btco-hover-menu .collapse ul ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul ul li:hover ul{display:block}
+    .btco-hover-menu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+
+}
+
+
+.nav-menu li.dropdown-item {
+    display: block;
+    padding: .1rem 1rem !important;
+    text-transform: capitalize !important;
+}
+/*.btco-hover-menu li.dropdown-remove::after {display: none !important;}*/
+
+a.dropdown-item.dropdown-toggle:after {display: none !important;}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+
+@media(max-width:768px){
+    .btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu{height: 300px; overflow: auto;}
+    .btco-hover-menu .arrowmenu:before {
+    float: right;
+    margin-top: 1px;
+    margin-right: 0px;
+    display: inline;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: "\f105";}
+
+    /*.dropdown-menu:before{display: none;}*/
+}
