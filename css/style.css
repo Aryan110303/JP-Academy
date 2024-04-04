@@ -189,6 +189,13 @@ ul.dropdown-menu a {
   right: 0;
 }
 
+.light_texts {
+  background-color: #ff4e31;
+  color: #FFFFFF !important;
+  width: 20%;
+}
+
+
 .intro .carousel-content {text-align: center;}
 
 .intro .wehelp{font-size: 30px; text-transform:uppercase;
@@ -315,6 +322,7 @@ ol, li {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
+
 
 .holo__slide {
   position: relative;
