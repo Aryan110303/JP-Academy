@@ -848,7 +848,6 @@ margin-bottom: 20px;}
   margin-bottom: 22px;
   width: 100%;
       display: flex;
-    flex-wrap: wrap;
     align-items: center;
     transition: all 0.5s ease;
     border-radius: 9px;
